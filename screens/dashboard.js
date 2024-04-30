@@ -363,11 +363,11 @@ function goToProfile() {
 function changeMode(){
   console.log("Darkmode enabled")
   let navBar= document.getElementById("nav-bar");
-  let body = document.getElementsByTagName("body")
-  let main = document.getElementsByTagName("main")
+  let mainCont = document.getElementById("main-cont")
+  let body = document.getElementById("body")
   // if(navBar.style.backgroundColor = "#FFEDEA" && body)
-  navBar.style.backgroundColor="#083143";
+  navBar.style.backgroundColor="#222831";
   body.classList.add("darkmode");
-  main.classList.add("darkmode");
+  mainCont.classList.add("darkmode");
   
 } 
