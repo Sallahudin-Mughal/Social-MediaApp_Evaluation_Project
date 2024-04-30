@@ -62,12 +62,12 @@ body{
   width: 70%;
 }
 
-.right{
+/* .right{ */
     /* height: 200px; */
     /* width: 50%; */
     /* position: relative; */
     /* border: 3px solid blue; */
-}
+/* } */
 .tabs{
   height: 10vh;
   width: 100%;
@@ -249,6 +249,22 @@ body{
   border-radius: 50%;
   position: absolute;
   
+}
+.liked-persons :nth-child(1){
+  /* top: 0; */
+  left: 0;
+  border: 2px solid #fc7456;
+  
+}
+.liked-persons :nth-child(2){
+  left: 20px;
+  z-index: 1;
+  border: 2px solid #fc7456;
+}
+.liked-persons :nth-child(3){
+  left: 40px;
+  z-index: 2;
+  border: 2px solid #fc7456;
 }
 .actions{
   display: flex;
