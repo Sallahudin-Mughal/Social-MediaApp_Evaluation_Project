@@ -116,7 +116,8 @@ class Authentication {
               }).then((result) => {
                 if (result.isConfirmed) {
                   // Redirect to socialmedia dashboard page
-                  window.location.href = "dashboard.html";
+                  window.location.href = "./screens/dashboard.html";
+                  console.log(window.location.href);
                 }
               });
             })

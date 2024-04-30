@@ -1066,3 +1066,7 @@ main{
         grid-template-columns: 90%;
     }
 }
+
+.darkmode{
+    background-color: #083143 !important;
+}

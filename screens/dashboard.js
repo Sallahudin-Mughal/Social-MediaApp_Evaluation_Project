@@ -367,7 +367,7 @@ function changeMode(){
   let main = document.getElementsByTagName("main")
   // if(navBar.style.backgroundColor = "#FFEDEA" && body)
   navBar.style.backgroundColor="#083143";
-  body.style.backgroundColor="#083143";
-  main.style.backgroundColor="#083143";
+  body.classList.add("darkmode");
+  main.classList.add("darkmode");
   
 } 
