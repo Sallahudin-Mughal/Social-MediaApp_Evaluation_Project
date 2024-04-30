@@ -21,8 +21,6 @@ goto_login.addEventListener("click", () => {
   container.classList.remove("active");
 });
 
-
-
 let Signup = document.getElementById("signup-btn");
 
 // Signup.addEventListener("click", () => {
@@ -112,11 +110,9 @@ class Authentication {
 
               // Show success message using Swal.fire
               Swal.fire({
-                
                 title: "Logging In",
                 text: "Login Successfully.",
                 icon: "success",
-                
               }).then((result) => {
                 if (result.isConfirmed) {
                   // Redirect to socialmedia dashboard page
