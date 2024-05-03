@@ -59,6 +59,7 @@
         </ul>
       </div>
 
+      <!-- pics-post hold all post data and uploded images -->
       <div class="pics-post">
         <div class="down-container-left">
           <div class="user-information" id="user-information">
@@ -209,6 +210,8 @@
       </div>
     </div>
 
+
+    <!-- bootstrap js link -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
       integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
@@ -219,32 +222,8 @@
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"
     ></script>
-    <script>
-      let username = localStorage.getItem("Username");
-      let profilePicture = localStorage.getItem("UserProfile");
-      let displayUsername = document.getElementById("username");
-      // let UserProfilePic = document.getElementById("");
-      displayUsername.innerText = username;
 
-      const imageContainer = document.getElementById("user-Profile-pic");
-      console.log(imageContainer);
-
-      // Create img element
-      const img = document.createElement("img");
-
-      console.log(img);
-      // Set src attribute with retrieved image data
-      img.src = profilePicture;
-
-      // Append the img element to the container
-      imageContainer.appendChild(img);
-
-
-
-
-    </script>
     <script src="profile.js"></script>
   </body>
 </html>
 
-<!-- <!DOCTYPE html> -->

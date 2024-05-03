@@ -100,11 +100,6 @@ document.addEventListener("DOMContentLoaded", function () {
   fetchUsersAndPosts();
 });
 
-
-
-
-////////////////////////////
-
 document.addEventListener("DOMContentLoaded", function () {
   // Function to fetch user data for the logged-in user
   function fetchLoggedInUserData() {
@@ -172,8 +167,22 @@ document.addEventListener("DOMContentLoaded", function () {
   fetchLoggedInUserData();
 });
 
-  
-  // Example usage: Pass the logged-in user's ID to the function
-//   const loggedInUserId = "123"; // Replace "123" with the actual ID of the logged-in user
-//   fetchLoggedInUserData(loggedInUserId);
-  
+
+let username = localStorage.getItem("Username");
+      let profilePicture = localStorage.getItem("UserProfile");
+      let displayUsername = document.getElementById("username");
+      // let UserProfilePic = document.getElementById("");
+      displayUsername.innerText = username;
+
+      const imageContainer = document.getElementById("user-Profile-pic");
+      console.log(imageContainer);
+
+      // Create img element
+      const img = document.createElement("img");
+
+      console.log(img);
+      // Set src attribute with retrieved image data
+      img.src = profilePicture;
+
+      // Append the img element to the container
+      imageContainer.appendChild(img);

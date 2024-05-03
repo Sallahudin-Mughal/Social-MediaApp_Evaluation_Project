@@ -8,12 +8,13 @@
     --search-padding: 0.6rem 1rem;
     --card-padding: 1rem;
     --color-white: hsl(252, 30%, 100%);
-    --color-gray: hsl(252, 15%, 65%);
+    /* --color-gray: hsl(252, 15%, 65%);
     --color-light:hsl(252, 30%, 90%);
     --color-dark: hsl(252, 30%, 17%);
-    --color-danger: hsl(0, 95%, 65%);
+    --color-danger: hsl(0, 95%, 65%); */
     /* --color-black: hsl(252, 30%, 10%); */
     --back-color: #FFEDEA;
+    --text-dark-color: 
     }
 *{
     margin: 0;
@@ -24,6 +25,7 @@
 body{
     background-color: #121212;
 }
+
 nav{
     /* position: fixed; */
     width: 100%;
@@ -255,7 +257,6 @@ nav{
 /* main page css */
 
 main{
-    /* width: 100%; */
     position: relative;
     top: 2.4rem;
     margin-left: 0;
@@ -314,7 +315,7 @@ main{
 
 }
 .sidebar1{
-    background-color: #fff;
+    background-color: var(--color-white);
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.08);
     margin-bottom: 20px;
     border-radius: 30px;
@@ -552,6 +553,9 @@ main{
 
 
 /* middle section include posts and stories */
+.middle{
+    /* position: relative; */
+}
 .middle .stories{
     display: flex;
     /* justify-content: space-between; */
@@ -610,9 +614,7 @@ main{
 }
 
 .middle .story .profile-pic{
-    /* position: ; */
     z-index: 1;
-    /* width: 2rem; */
     height: 2rem;
     border: 3px solid var(--color-primary) ;
 }
@@ -738,43 +740,10 @@ main{
     font-size: 12px;
     cursor: pointer;
 }
-
-
-
-
-.middle .feeds .feed{
-    background: var(--color-white);
-    border-radius: var(--card-border-radius);
-    padding: var(--card-padding);
-    margin: 1rem 0;
-    font-size: 0.85rem;
-    line-height: 1.5;
+.middle .news-feed{
+    /* height: 1800px; */
+    /* overflow-y: scroll; */
 }
-
-.middle .feed .head{
-    display: flex;
-    justify-content: space-between;
-
-}
-
-.middle .feed .user{
-    display: flex;
-    gap: 1rem;
-}
-
-.middle .feed .photo{
-    border-radius: var(--card-border-radius);
-    overflow: hidden;
-    margin: 0.7rem 0;
-}
-.middle .feed .action-button{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1.4rem;
-    margin: 0.6rem;
-}
-  
 .middle .liked-by{
     display: flex;
 }
@@ -821,7 +790,7 @@ main{
 
 .input-group input{
     border: none;
-    background-color: none;
+    background-color: transparent;
 }
 .input-group input:focus{
     outline: none !important;
@@ -834,7 +803,14 @@ main{
     color: #fc7456;
 }
 
-
+.nextbtn button{
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+    /* width: 100%; */
+    /* background-color: #180d08; */
+    z-index: 5;
+}
 
 /* right section css */
 
@@ -1038,7 +1014,23 @@ main{
     overflow: hidden;
     object-fit: contain;
 }
+@media screen and (max-width : 1200px) {
+    .left .sidebar .friend-card img{
+        width: 30px;
+    }
+    .frnd-icon{
+        width: 40px  !important;
+        height: 40px !important;
+    }
+    .frnd-icon i{
+        
+        font-size: 20px ;
+    }
+    .user-info{
+        font-size: 10px ;
 
+    }
+}
 @media screen and (max-width: 900px) {
     main .left{
         display: none;
@@ -1068,5 +1060,7 @@ main{
 }
 
 .darkmode{
-    background-color: #083143 !important;
+    background-color: #180d08 !important;
+    color: #ffcbbc !important;
+    border-color: #ffcbbc !important;
 }
