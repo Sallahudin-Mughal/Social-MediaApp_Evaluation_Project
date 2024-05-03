@@ -128,7 +128,7 @@ function postCard(index) {
                             <p>${user.address.address}</p>
                         </div>
                     </div>
-                    <i class="fa-solid fa-ellipsis" onclick="showProp()"></i>
+                    <i class="fa-solid fa-ellipsis"></i>
                 </div>
                 
                 <img src="../Images/background1.jpg" class="card-img-top" />
@@ -192,10 +192,10 @@ function postCard(index) {
           // Check if there are more posts to display
           if (currentIndex < postData.total) {
             // Show the "Show more" button
-            document.getElementById("showMoreBtn").style.display = "block";
+            // document.getElementById("showMoreBtn").style.display = "block";
           } else {
             // Hide the "Show more" button if no more posts available
-            document.getElementById("showMoreBtn").style.display = "none";
+            // document.getElementById("showMoreBtn").style.display = "none";
           }
         })
         .catch((error) => {
@@ -211,9 +211,9 @@ function postCard(index) {
 postCard(currentIndex);
 
 // Event listener for the "Show more" button
-document.getElementById("showMoreBtn").addEventListener("click", () => {
-  postCard(currentIndex);
-});
+// document.getElementById("showMoreBtn").addEventListener("click", () => {
+//   postCard(currentIndex);
+// });
 
 // Call the function to display post cards
 postCard();
